@@ -13,6 +13,6 @@ node {
 	}    
 	stage("Build Image")
 	{	
-		sh 'docker build -t PokedexTeam/PokedexWebapi .'
+		sh 'docker build -t pokedexteam/pokedexwebapi .'
 	}    
 }
