@@ -1,7 +1,7 @@
 job('webapi_build') {
     logRotator(-1, 10)
     scm	{
-		github('Saetabis1/dotnetSeleniumTemplate','master')
+		github('PokedexTeam/PokedexWebapi','master')
     }
     triggers {
         githubPush()
