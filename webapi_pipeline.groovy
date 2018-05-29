@@ -8,7 +8,7 @@ folder(basePath) {
 pipelineJob("$basePath/Webapi") {
     definition {
         cps {
-                script(readFileFromWorkspace('/pipelines/webapi_pipeline_build.groovy'))
+                script(readFileFromWorkspace('pipeline_webapi.groovy'))
                 sandbox()
         }
     }
