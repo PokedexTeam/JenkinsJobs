@@ -1,11 +1,11 @@
 node {
     stage("Build")
 	{	
-		dotnet build
+		sh 'dotnet build'
 	}    
 	stage("Test")
 	{	
-		dotnet test
+		sh 'dotnet test'
 	}    
 	stage("Build Image")
 	{	
