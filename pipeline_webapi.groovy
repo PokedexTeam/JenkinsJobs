@@ -1,4 +1,8 @@
 node {
+	stage("Clone")
+	{
+		git credentialsId: 'Saetabis1', url: 'https://github.com/PokedexTeam/PokedexWebapi.git'
+	}
     stage("Build")
 	{	
 		sh 'dotnet build'
