@@ -1,4 +1,4 @@
-job('webapi_build') {
+job('pokedex_webapi_build') {
     logRotator(-1, 10)
     scm	{
 		github('PokedexTeam/PokedexWebapi','master')
