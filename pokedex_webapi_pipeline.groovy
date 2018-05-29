@@ -1,4 +1,4 @@
-pipelineJob('example') {
+pipelineJob('pokedex_webapi') {
     definition {
         cps {
             script(readFileFromWorkspace('pokedex_webapi_build.groovy'))
