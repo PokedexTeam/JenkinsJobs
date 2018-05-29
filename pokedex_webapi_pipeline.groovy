@@ -1,9 +1,15 @@
-pipelineJob('pokedex_webapi') {
+String basePath = 'Pokedex'
+String repo = 'jenkins-training/tech-example-java'
+
+folder(basePath) {
+    description 'Main Folder for pipeline'
+}
+
+pipelineJob("$basePath/Webapi") {
     definition {
         cps {
-            script(readFileFromWorkspace('pokedex_webapi_build.groovy'))
-			script(readFileFromWorkspace('pokedex_webapi_test.groovy'))
-            sandbox()
+                script(readFileFromWorkspace('pipeline-build.groovy'))
+                sandbox()
         }
     }
 }
